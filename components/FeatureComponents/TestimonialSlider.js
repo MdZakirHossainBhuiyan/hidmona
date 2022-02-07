@@ -3,13 +3,7 @@ import React from "react";
 const TestimonialSlider = () => {
   return (
     <div className="review-slides-two owl-carousel owl-theme">
-      <div
-        className="single-review-card"
-        data-aos="fade-up"
-        data-aos-delay={50}
-        data-aos-duration={500}
-        data-aos-once="true"
-      >
+      <div className="single-review-card" data-aos="fade-up" data-aos-delay={50} data-aos-duration={500} data-aos-once="true" >
         <ul className="review-rating">
           <li>
             <i className="ri-star-line" />

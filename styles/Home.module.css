@@ -108,6 +108,14 @@
   margin-left: 0.5rem;
 }
 
+.sliderGrid{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0070f3;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
