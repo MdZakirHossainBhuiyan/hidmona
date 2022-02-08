@@ -190,7 +190,7 @@ export default function Home() {
           <div className="section-title">
             <h2>What Our Customers Says</h2>
           </div>
-          {/* <TestimonialSlider /> */}
+          <TestimonialSlider />
           <div className={styles.sliderBody}>
             <SliderTest />
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      
+
     </>
   );
 }
