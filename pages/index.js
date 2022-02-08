@@ -2,8 +2,10 @@ import Head from "next/head";
 import Image from "next/image";
 import CurrencyForm from "../components/FeatureComponents/CurrencyForm";
 import SlideEffect from "../components/FeatureComponents/SlideEffect";
+import SliderTest from "../components/FeatureComponents/SliderTest";
 import TestimonialSlider from "../components/FeatureComponents/TestimonialSlider";
 import Header from "../components/header";
+import styles from '../styles/SliderTest.module.css';
 
 export default function Home() {
   return (
@@ -37,6 +39,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="global-transfers-area pt-100 pb-75">
         <div className="container">
           <div className="section-title">
@@ -106,6 +109,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="why-choose-us-area ptb-100">
         <div className="container">
           <div className="row align-items-center">
@@ -180,12 +184,16 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="review-area bg-F4F5F5 ptb-100">
         <div className="container">
           <div className="section-title">
             <h2>What Our Customers Says</h2>
           </div>
-          <TestimonialSlider />
+          {/* <TestimonialSlider /> */}
+          <div className={styles.sliderBody}>
+            <SliderTest />
+          </div>
         </div>
       </div>
 
@@ -232,6 +240,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

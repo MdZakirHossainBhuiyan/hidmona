@@ -4,63 +4,47 @@ const CurrencyForm = () => {
     const [currencyType, setCurrencyType] = useState('usd');
     let applyFee;
 
-    const writeAmount = (convertedAmount, rate) => {
-        document.getElementById('convertedAmount').innerText = convertedAmount;
-        document.getElementById('convertedAmountRate').innerText = rate;
-        document.getElementById('recipientGetAmount').value = convertedAmount;
+    const writeAmount = (applyFee, rate) => {
+        const convertedAmount = applyFee * rate;
+        document.getElementById('convertedAmount').innerText = convertedAmount.toFixed(2);
+        document.getElementById('convertedAmountRate').innerText = rate.toFixed(2);
+        document.getElementById('recipientGetAmount').value = convertedAmount.toFixed(2);
     }
 
     const handleChange = (e) =>{
         let sendValue = e.target.value;
 
-        if(sendValue>5){
-            applyFee = sendValue - 2.07;
-        }
-        else{
-            applyFee = 0;
-        }
-
-        var convertedAmount;
+        sendValue>5?applyFee = sendValue - 2.07:applyFee = 0;
 
         if(currencyType === 'usd'){
-            convertedAmount = applyFee * 10;
-            writeAmount(convertedAmount, 10);
+            writeAmount(applyFee, 10);
         }
         else if(currencyType === 'gbp'){
-            convertedAmount = applyFee * 20;
-            writeAmount(convertedAmount, 20);
+            writeAmount(applyFee, 20);
         }
         else if(currencyType === 'eur'){
-            convertedAmount = applyFee * 30;
-            writeAmount(convertedAmount, 30);
+            writeAmount(applyFee, 30);
         }
         else if(currencyType === 'aed'){
-            convertedAmount = applyFee * 40;
-            writeAmount(convertedAmount, 40);
+            writeAmount(applyFee, 40);
         }
         else if(currencyType === 'aud'){
-            convertedAmount = applyFee * 50;
-            writeAmount(convertedAmount, 50);
+            writeAmount(applyFee, 50);
         }
         else if(currencyType === 'cad'){
-            convertedAmount = applyFee * 60;
-            writeAmount(convertedAmount, 60);
+            writeAmount(applyFee, 60);
         }
         else if(currencyType === 'jpy'){
-            convertedAmount = applyFee * 70;
-            writeAmount(convertedAmount, 70);
+            writeAmount(applyFee, 70);
         }
         else if(currencyType === 'myr'){
-            convertedAmount = applyFee * 80;
-            writeAmount(convertedAmount, 80);
+            writeAmount(applyFee, 80);
         }
         else if(currencyType === 'nzd'){
-            convertedAmount = applyFee * 90;
-            writeAmount(convertedAmount, 90);
+            writeAmount(applyFee, 90);
         }
         else if(currencyType === 'try'){
-            convertedAmount = applyFee * 100;
-            writeAmount(convertedAmount, 100);
+            writeAmount(applyFee, 100);
         }
     }
 
@@ -172,6 +156,7 @@ const CurrencyForm = () => {
                         className="form-control"
                         autoComplete="off"
                         id="recipientGetAmount"
+                        disabled={true}
                         />
                         <div className="dropdown amount-currency-select">
                             <button
