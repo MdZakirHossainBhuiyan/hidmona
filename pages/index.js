@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import CurrencyForm from "../components/FeatureComponents/CurrencyForm";
-import SlideEffect from "../components/FeatureComponents/SlideEffect";
-import SliderTest from "../components/FeatureComponents/SliderTest";
 import TestimonialSlider from "../components/FeatureComponents/TestimonialSlider";
 import Header from "../components/header";
-import styles from '../styles/SliderTest.module.css';
+
 
 export default function Home() {
   return (
@@ -191,9 +189,6 @@ export default function Home() {
             <h2>What Our Customers Says</h2>
           </div>
           <TestimonialSlider />
-          {/* <div className={styles.sliderBody}>
-            <SliderTest />
-          </div> */}
         </div>
       </div>
 
