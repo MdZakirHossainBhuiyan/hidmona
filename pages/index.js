@@ -191,9 +191,9 @@ export default function Home() {
             <h2>What Our Customers Says</h2>
           </div>
           <TestimonialSlider />
-          <div className={styles.sliderBody}>
+          {/* <div className={styles.sliderBody}>
             <SliderTest />
-          </div>
+          </div> */}
         </div>
       </div>
 
