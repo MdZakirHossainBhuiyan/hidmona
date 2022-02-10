@@ -1,0 +1,122 @@
+.sliderBody{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSliderContainer{
+    width: 100%;
+    height: 308px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sliderIcon.left, .sliderIcon.right{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
+    cursor: pointer;
+    display: none;
+}
+
+.sliderIcon.left:hover, .sliderIcon.right:hover{
+    opacity: 1;
+}
+
+.sliderIcon.left{
+    left: 0;
+}
+
+.sliderIcon.right{
+    right: 0;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+
+.sliderCard{
+    width: 48.8%;
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+    margin-right: 25px;
+    border: 1px solid rgb(223, 218, 218);
+    padding: 30px;
+}
+
+.sliderCard:hover{
+    border: 1px solid orangered;
+    border-radius: 5px;
+}
+
+.reviewRating{
+    display: flex;
+    font-size: 20px;
+    color: rgb(230, 151, 4);
+    margin-left: -30px;
+}
+
+.starStyle{
+    list-style: none;
+}
+
+.cardDescription p{
+    width: 100px;
+    height: 100px;
+    color: red;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+}
+
+.clientInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personalInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.personalInfo h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.personalInfo span{
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.clientImage{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
