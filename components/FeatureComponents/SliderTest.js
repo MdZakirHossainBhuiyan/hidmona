@@ -56,7 +56,7 @@ const SliderTest = (props) => {
                 var sliderRotation = document.getElementById("sliderRotation");
                 sliderRotation.scrollLeft += 569;
                 count++;
-                if(count==3){
+                if(count==2){
                     moveForward = false;
                 }
             }

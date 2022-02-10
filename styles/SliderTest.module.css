@@ -49,6 +49,7 @@
     white-space: nowrap;
     overflow-x: scroll;
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .slider::-webkit-scrollbar{
