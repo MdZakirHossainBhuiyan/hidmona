@@ -23,11 +23,11 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
-      <script src="assets/js/jquery.min.js"></script>
+      {/* <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/jquery.meanmenu.js"></script>
       <script src="assets/js/owl.carousel.min.js"></script>
-      <Script src="assets/js/main.js"></Script>
+      <Script src="assets/js/main.js"></Script> */}
     </>
   );
 }
