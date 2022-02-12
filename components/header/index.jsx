@@ -6,7 +6,7 @@ import styles from '../../styles/LanguageOption.module.css';
 
 const Header = (props) => {
   const [showLanguageOption, setShowLanguageOption] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState();
+  const [selectedLanguage, setSelectedLanguage] = useState('English');
 
   const handleLanguageOption = (lang) =>{
     setSelectedLanguage(lang);
