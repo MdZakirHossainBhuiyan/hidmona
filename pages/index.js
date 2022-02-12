@@ -9,7 +9,7 @@ import styles from '../styles/SliderTest.module.css';
 export default function Home() {
   return (
     <>
-      <div className="main-hero-area">
+      <div style={{"zIndex": "-1"}} className="main-hero-area">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div

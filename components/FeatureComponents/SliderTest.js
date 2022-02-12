@@ -97,7 +97,7 @@ const SliderTest = (props) => {
                                     </li>
                                 </ul>
                                 <div className={cardDescription}>
-                                    {/* <span>{slide.review}</span> */}
+                                    <span>{slide.review}</span>
                                 </div>
                                 <div className={clientInfo}>
                                     <div className={personalInfo}>
